@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+html,
+body,
+#app {
+  @apply w-full h-full;
+}
+
+html,
+body {
+  overflow: hidden;
+}
