@@ -1,19 +1,16 @@
 import * as React from 'react';
 import Header from '@/components/Header';
-import CategoryBar from '@/components/CategoryBar';
+import { AppRoutes } from './router';
 
 const App = () => {
-  
   return (
     <div className='app w-full h-full'>
-      <div className='w-full h-full'>
+      <div className='w-full h-full overflow-scroll'>
         <Header />
         <div className='container h-full'>
-          <CategoryBar />
-          hello!!!!!zzzzz
+          <AppRoutes />
         </div>
       </div>
-      
     </div>
   )
 }
