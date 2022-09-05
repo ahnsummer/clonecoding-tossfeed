@@ -10,6 +10,11 @@ const customPlugins = plugin(({ addComponents, addUtilities, addVariant }) => {
       "align-items": "center",
       "justify-content": "center",
     },
+    ".flex-between": {
+      display: "flex",
+      "align-items": "center",
+      "justify-content": "space-between",
+    }
   });
 
   addComponents({

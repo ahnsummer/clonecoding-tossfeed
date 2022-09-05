@@ -7,8 +7,8 @@ const App = () => {
   return (
     <div className='app w-full h-full'>
       <div className='w-full h-full'>
+        <Header />
         <div className='container h-full'>
-          <Header />
           <CategoryBar />
           hello!!!!!zzzzz
         </div>
