@@ -3,15 +3,38 @@ import { useEffect } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import { ScriptKind } from "typescript";
 
+interface IArticle {
+  category: string;
+  title: string;
+  content: string;
+  date: string;
+}
+
+// class Article {
+//   category: string;
+//   title: string;
+//   content: string;
+//   date: string;
+
+//   constructor(a, b, c, d) {
+//     this.category = a;
+//     this.title = b;
+//     this.content = c;
+//     this.date = d;
+//   }
+// }
+
 const List = () => {
   const params = useParams();
 
-  const [dummy, setDummy] = useState<{ [key:string]: string[] }>({
+  const [dummy, setDummy] = useState<{ [key: string]: Array<IArticle> }>({
     news: [
-      "뉴스 카테고리 입니다.",
-      "뉴스 제목 입니다.",
-      "뉴스 내용 입니다.",
-      "뉴스 날짜 입니다."
+      {
+        category: "뉴스 카테고리 입니다.",
+        title: "뉴스 제목 입니다.",
+        content: "뉴스 내용 입니다.",
+        date: "뉴스 날짜 입니다."
+      },
     ],
     library: [
       "라이브러리 카테고리 입니다.",
