@@ -5,7 +5,6 @@ import Finance from "@/views/finance";
 import Loading from "@/views/loading";
 import Login from "@/views/login";
 import Toss from "@/views/toss";
-import List from "@/views/list";
 
 export const AppRoutes = () => (
   <Routes>

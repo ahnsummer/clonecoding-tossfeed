@@ -4,10 +4,10 @@ import { AppRoutes } from './router';
 
 const App = () => {
   return (
-    <div className='app w-full h-full'>
-      <div className='w-full h-full overflow-y-scroll'>
+    <div className='app w-full h-full overflow-scroll'>
+      <div className='w-full h-screen'>
         <Header />
-        <div className='container h-full'>
+        <div className='container'>
           <AppRoutes />
         </div>
       </div>
